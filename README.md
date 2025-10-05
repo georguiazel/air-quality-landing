@@ -1,4 +1,4 @@
-# Air quality landing page holis sdfsdf
+# Air quality landing page
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 

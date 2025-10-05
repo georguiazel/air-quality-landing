@@ -22,7 +22,7 @@ const features = [
   },
   {
     icon: Smartphone,
-    title: "PWA Responsive",
+    title: "Web Responsive",
     description:
       "Aplicación web progresiva que funciona en cualquier dispositivo con notificaciones push en tiempo real.",
     gradient: "from-purple-500/10 to-pink-500/10",

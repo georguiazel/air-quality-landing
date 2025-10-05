@@ -24,7 +24,7 @@ const steps = [
   {
     number: "04",
     title: "Monitoreo Continuo",
-    description: "Nuestra PWA te mantiene informado en tiempo real sobre cambios en la calidad del aire.",
+    description: "Nuestra Web te mantiene informado en tiempo real sobre cambios en la calidad del aire.",
   },
 ]
 

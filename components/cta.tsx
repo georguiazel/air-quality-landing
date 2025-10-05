@@ -29,7 +29,7 @@ export function CTA() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button size="lg" variant="secondary" className="text-base" asChild>
                 <Link href="/register">
-                  Crear Cuenta Gratis
+                  Crear Cuenta 
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>

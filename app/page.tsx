@@ -19,7 +19,6 @@ export default function Home() {
       <HowItWorks />
       <CTA />
       <Footer />
-      <PWAInstallPrompt />
     </main>
   )
 }

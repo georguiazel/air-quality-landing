@@ -82,16 +82,7 @@ export function Hero() {
               <FloatingNotificationCards />
 
               {/* Center dashboard preview */}
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card hover:scale-105 transition-transform duration-700 max-w-md">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dashboard_landing-k5DvwH4uiR3VPQMfdmj4lGGWOJ96dh.jpg"
-                  alt="Oxyra Dashboard Preview"
-                  width={600}
-                  height={800}
-                  className="w-full h-auto"
-                />
-              </div>
-
+              
               {/* Animated background glow */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent via-secondary to-primary opacity-20 blur-3xl animate-pulse" />
             </div>

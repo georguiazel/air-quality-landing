@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Wind } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,10 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary">
-                <Wind className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-semibold text-foreground">AireTEMPO</span>
+              <Image src="/oxyra-logo.svg" alt="Oxyra" width={120} height={32} className="h-8 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Pronóstico inteligente de calidad del aire para mejores decisiones de salud pública.
@@ -86,7 +83,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} AireTEMPO. Todos los derechos reservados.
+            © {new Date().getFullYear()} Oxyra. Todos los derechos reservados.
           </p>
         </div>
       </div>

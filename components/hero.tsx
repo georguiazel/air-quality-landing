@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Bell, Cloud } from "lucide-react"
 import Link from "next/link"
 import { useInView } from "@/hooks/use-in-view"
+import { FloatingNotificationCards } from "@/components/floating-notification-cards"
+import Image from "next/image"
 
 export function Hero() {
   const { ref: heroRef, isInView } = useInView({ threshold: 0.2 })
@@ -70,60 +72,28 @@ export function Hero() {
             </div>
           </div>
 
+          {/* Right content - Dashboard preview with floating notifications */}
           <div
             className={`relative transition-all duration-1000 delay-300 ${
               isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
             }`}
           >
-            <div className="relative max-w-2xl mx-auto">
-              <div
-                className="absolute inset-0 rounded-full border-2 border-primary/20 animate-spin-slow"
-                style={{ animationDuration: "20s" }}
-              />
-              <div
-                className="absolute inset-8 rounded-full border-2 border-secondary/20 animate-spin-slow"
-                style={{ animationDuration: "15s", animationDirection: "reverse" }}
-              />
+            <div className="relative max-w-2xl mx-auto min-h-[600px] flex items-center justify-center">
+              <FloatingNotificationCards />
+
+              {/* Center dashboard preview */}
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card hover:scale-105 transition-transform duration-700 max-w-md">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dashboard_landing-k5DvwH4uiR3VPQMfdmj4lGGWOJ96dh.jpg"
+                  alt="Oxyra Dashboard Preview"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto"
+                />
+              </div>
 
               {/* Animated background glow */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent via-secondary to-primary opacity-20 blur-3xl animate-pulse" />
-
-              {/* Main dashboard image */}
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card hover:scale-105 transition-transform duration-700">
-                
-              </div>
-
-              <div
-                className={`absolute -bottom-6 -left-6 bg-card border border-border rounded-xl shadow-xl p-4 max-w-xs transition-all duration-1000 delay-700 hover:scale-110 ${
-                  isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                }`}
-              >
-                <div className="flex items-start gap-3">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-accent/10 animate-pulse">
-                    <Bell className="w-5 h-5 text-accent" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-semibold text-foreground">Alerta de Calidad del Aire</p>
-                    <p className="text-xs text-muted-foreground mt-1">Nivel moderado detectado en tu zona</p>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={`absolute -top-6 -right-6 bg-card border border-border rounded-xl shadow-xl p-4 transition-all duration-1000 delay-900 hover:scale-110 ${
-                  isInView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
-                    <Cloud className="w-5 h-5 text-primary animate-bounce" />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-foreground">45</p>
-                    <p className="text-xs text-muted-foreground">AQI Actual</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

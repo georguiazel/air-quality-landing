@@ -119,7 +119,7 @@ export function AirQualityDemo() {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card group">
             <img
-              src="/comprehensive-air-quality-dashboard-showing-intera.jpg"
+              src="./dashboard_main_intro.jpg"
               alt="Dashboard Completo de Calidad del Aire"
               className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
             />

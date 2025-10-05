@@ -8,23 +8,23 @@ import { useInView } from "@/hooks/use-in-view"
 const steps = [
   {
     number: "01",
-    title: "Regístrate",
-    description: "Crea tu cuenta gratuita y configura tus preferencias de ubicación y alertas.",
+    title: "Sign up",
+    description: "Create your free account and set your location and alert preferences.",
   },
   {
     number: "02",
-    title: "Recibe el Estado Inicial",
-    description: "Al registrarte, recibirás inmediatamente el estado actual de la calidad del aire en tu zona.",
+    title: "Receive initial status",
+    description: "Upon registration, you'll immediately receive the current air quality status for your area.",
   },
   {
     number: "03",
-    title: "Configura Alertas",
-    description: "Personaliza los intervalos y umbrales para recibir notificaciones por SMS o WhatsApp.",
+    title: "Set up alerts",
+    description: "Customize intervals and thresholds to receive notifications via SMS or WhatsApp.",
   },
   {
     number: "04",
-    title: "Monitoreo Continuo",
-    description: "Nuestra Web te mantiene informado en tiempo real sobre cambios en la calidad del aire.",
+    title: "Continuous monitoring",
+    description: "Our web app keeps you informed in real time about changes in air quality.",
   },
 ]
 
@@ -41,10 +41,8 @@ export function HowItWorks() {
             titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Cómo Funciona</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Comienza a proteger tu salud en 4 simples pasos
-          </p>
+          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">How it works</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">Start protecting your health in 4 simple steps</p>
         </div>
 
         <div

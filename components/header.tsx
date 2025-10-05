@@ -19,13 +19,13 @@ export function Header() {
               href="#features"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Funcionalidades
+              Features
             </Link>
             <Link
               href="#how-it-works"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Cómo Funciona
+              How It Works
             </Link>
             <Link
               href="#demo"
@@ -38,10 +38,10 @@ export function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <Button variant="ghost" asChild>
-              <Link href="/login">Iniciar Sesión</Link>
+              <Link href="/login">Sign In</Link>
             </Button>
             <Button asChild>
-              <Link href="/register">Comenzar</Link>
+              <Link href="/register">Get Started</Link>
             </Button>
           </div>
         </div>

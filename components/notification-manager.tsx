@@ -17,7 +17,7 @@ export function NotificationManager() {
 
   const requestPermission = async () => {
     if (!isSupported) {
-      alert("Las notificaciones no están soportadas en este navegador")
+      alert("Notifications are not supported in this browser")
       return
     }
 
@@ -33,8 +33,8 @@ export function NotificationManager() {
           console.log("[v0] Service Worker ready:", registration)
 
           // Send test notification
-          new Notification("AireTEMPO", {
-            body: "Notificaciones activadas correctamente",
+          new Notification("Oxira", {
+            body: "Notifications enabled successfully",
             icon: "/icon-192.jpg",
           })
         }
@@ -51,12 +51,12 @@ export function NotificationManager() {
       {permission === "granted" ? (
         <Button variant="outline" size="sm" className="gap-2 bg-transparent" disabled>
           <Bell className="w-4 h-4" />
-          Notificaciones activas
+          Notifications active
         </Button>
       ) : (
         <Button variant="default" size="sm" className="gap-2" onClick={requestPermission}>
           <BellOff className="w-4 h-4" />
-          Activar notificaciones
+          Enable notifications
         </Button>
       )}
     </div>

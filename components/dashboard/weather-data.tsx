@@ -5,17 +5,17 @@ import { Cloud, Wind, Droplets, Sun, Thermometer } from "lucide-react"
 
 export function WeatherData() {
   const weatherMetrics = [
-    { icon: <Thermometer className="w-4 h-4" />, label: "Temperatura", value: "24°C" },
-    { icon: <Wind className="w-4 h-4" />, label: "Viento", value: "12 km/h" },
-    { icon: <Droplets className="w-4 h-4" />, label: "Humedad", value: "65%" },
-    { icon: <Sun className="w-4 h-4" />, label: "UV Index", value: "5 (Moderado)" },
+    { icon: <Thermometer className="w-4 h-4" />, label: "Temperature", value: "24°C" },
+    { icon: <Wind className="w-4 h-4" />, label: "Wind", value: "12 km/h" },
+    { icon: <Droplets className="w-4 h-4" />, label: "Humidity", value: "65%" },
+    { icon: <Sun className="w-4 h-4" />, label: "UV Index", value: "5 (Moderate)" },
   ]
 
   return (
     <Card className="p-6">
-      <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-4">
         <Cloud className="w-5 h-5 text-primary" />
-        <h2 className="text-xl font-semibold">Datos Meteorológicos</h2>
+        <h2 className="text-xl font-semibold">Weather Data</h2>
       </div>
 
       <div className="space-y-4">
@@ -24,7 +24,7 @@ export function WeatherData() {
             <Sun className="w-10 h-10 text-white" />
           </div>
           <p className="text-4xl font-bold mb-1">24°C</p>
-          <p className="text-muted-foreground">Parcialmente nublado</p>
+          <p className="text-muted-foreground">Partly cloudy</p>
         </div>
 
         <div className="space-y-3">
@@ -40,7 +40,7 @@ export function WeatherData() {
         </div>
 
         <div className="pt-4 border-t border-border">
-          <p className="text-xs text-muted-foreground text-center">Pronóstico para las próximas 24 horas</p>
+          <p className="text-xs text-muted-foreground text-center">Forecast for the next 24 hours</p>
         </div>
       </div>
     </Card>

@@ -23,7 +23,7 @@ export function MetricsOverview() {
       unit: "US AQI",
       status: "good",
       icon: <Activity className="w-5 h-5" />,
-      change: "-5 desde ayer",
+      change: "-5 since yesterday",
     },
     {
       label: "PM2.5",
@@ -31,23 +31,23 @@ export function MetricsOverview() {
       unit: "μg/m³",
       status: "good",
       icon: <Wind className="w-5 h-5" />,
-      change: "-2.1 desde ayer",
+      change: "-2.1 since yesterday",
     },
     {
-      label: "Humedad",
+      label: "Humidity",
       value: "65",
       unit: "%",
       status: "good",
       icon: <Droplets className="w-5 h-5" />,
-      change: "+3% desde ayer",
+      change: "+3% since yesterday",
     },
     {
-      label: "Visibilidad",
+      label: "Visibility",
       value: "10",
       unit: "km",
       status: "good",
       icon: <Eye className="w-5 h-5" />,
-      change: "Sin cambios",
+      change: "No change",
     },
   ])
 

@@ -1,6 +1,6 @@
 {
-  "name": "AireTEMPO - Pronóstico de Calidad del Aire",
-  "short_name": "AireTEMPO",
+  "name": "Oxira - Pronóstico de Calidad del Aire",
+  "short_name": "Oxira",
   "description": "Monitorea la calidad del aire en tiempo real con datos TEMPO y recibe alertas personalizadas",
   "start_url": "/",
   "display": "standalone",

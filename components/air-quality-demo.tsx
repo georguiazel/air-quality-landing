@@ -8,16 +8,16 @@ import { Wind, Droplets, Eye, ThermometerSun } from "lucide-react"
 import { useInView } from "@/hooks/use-in-view"
 
 const airQualityData = [
-  { label: "Buena", value: 45, color: "bg-accent", textColor: "text-accent" },
-  { label: "Moderada", value: 85, color: "bg-chart-2", textColor: "text-chart-2" },
-  { label: "Mala", value: 155, color: "bg-destructive", textColor: "text-destructive" },
+  { label: "Good", value: 45, color: "bg-accent", textColor: "text-accent" },
+  { label: "Moderate", value: 85, color: "bg-chart-2", textColor: "text-chart-2" },
+  { label: "Poor", value: 155, color: "bg-destructive", textColor: "text-destructive" },
 ]
 
 const metrics = [
   { icon: Wind, label: "PM2.5", value: "45 μg/m³", status: "good" },
-  { icon: Droplets, label: "Humedad", value: "65%", status: "normal" },
-  { icon: Eye, label: "Visibilidad", value: "10 km", status: "good" },
-  { icon: ThermometerSun, label: "Temperatura", value: "24°C", status: "normal" },
+  { icon: Droplets, label: "Humidity", value: "65%", status: "normal" },
+  { icon: Eye, label: "Visibility", value: "10 km", status: "good" },
+  { icon: ThermometerSun, label: "Temperature", value: "24°C", status: "normal" },
 ]
 
 export function AirQualityDemo() {
@@ -35,9 +35,9 @@ export function AirQualityDemo() {
             titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Monitoreo en Tiempo Real</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Real-time Monitoring</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Visualiza la calidad del aire y datos meteorológicos actualizados constantemente
+            View air quality and weather data updated in real time
           </p>
         </div>
 
@@ -50,10 +50,8 @@ export function AirQualityDemo() {
             }`}
           >
             <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-semibold text-foreground">Índice de Calidad del Aire</h3>
-              <Badge variant="secondary" className="bg-accent text-accent-foreground">
-                En Vivo
-              </Badge>
+              <h3 className="text-2xl font-semibold text-foreground">Air Quality Index</h3>
+              <Badge variant="secondary" className="bg-accent text-accent-foreground">Live</Badge>
             </div>
 
             <div className="space-y-4">
@@ -74,7 +72,7 @@ export function AirQualityDemo() {
             </div>
 
             <div className="pt-4 border-t border-border">
-              <p className="text-sm text-muted-foreground">Última actualización: hace 2 minutos</p>
+              <p className="text-sm text-muted-foreground">Last updated: 2 minutes ago</p>
             </div>
           </Card>
 
@@ -85,7 +83,7 @@ export function AirQualityDemo() {
               rightCardInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
             }`}
           >
-            <h3 className="text-2xl font-semibold text-foreground">Datos Meteorológicos</h3>
+            <h3 className="text-2xl font-semibold text-foreground">Weather Data</h3>
 
             <div className="grid grid-cols-2 gap-6">
               {metrics.map((metric, index) => {
@@ -105,7 +103,7 @@ export function AirQualityDemo() {
             <div className="pt-4 border-t border-border">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                <p className="text-sm text-muted-foreground">Integración TEMPO activa</p>
+                <p className="text-sm text-muted-foreground">TEMPO integration active</p>
               </div>
             </div>
           </Card>
@@ -120,7 +118,7 @@ export function AirQualityDemo() {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card group">
             <img
               src="./dashboard_main_intro.jpg"
-              alt="Dashboard Completo de Calidad del Aire"
+              alt="Complete Air Quality Dashboard"
               className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

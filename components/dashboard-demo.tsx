@@ -17,13 +17,8 @@ export function DashboardDemo() {
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance">
-            Dashboard Profesional de Calidad del Aire
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Visualiza datos en tiempo real, pronósticos precisos, mapas de calor interactivos y recomendaciones
-            personalizadas de salud.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance">Professional Air Quality Dashboard</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">View real-time data, accurate forecasts, interactive heatmaps, and personalized health recommendations.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
@@ -42,8 +37,8 @@ export function DashboardDemo() {
               />
             </div>
             <div className="mt-4 text-center">
-              <h3 className="text-lg font-semibold text-foreground">Vista de Calidad Buena</h3>
-              <p className="text-sm text-muted-foreground">Monitoreo completo con AQI 61 - Aire limpio</p>
+              <h3 className="text-lg font-semibold text-foreground">Good Quality View</h3>
+              <p className="text-sm text-muted-foreground">Full monitoring with AQI 61 - Clean air</p>
             </div>
           </div>
 
@@ -62,8 +57,8 @@ export function DashboardDemo() {
               />
             </div>
             <div className="mt-4 text-center">
-              <h3 className="text-lg font-semibold text-foreground">Vista de Calidad Moderada</h3>
-              <p className="text-sm text-muted-foreground">Alertas activas con AQI 57 - Monitoreo PM10</p>
+              <h3 className="text-lg font-semibold text-foreground">Moderate Quality View</h3>
+              <p className="text-sm text-muted-foreground">Active alerts with AQI 57 - PM10 monitoring</p>
             </div>
           </div>
         </div>
@@ -75,7 +70,7 @@ export function DashboardDemo() {
         >
           <Button size="lg" className="text-base group" asChild>
             <Link href="/dashboard">
-              Explorar Dashboard Completo
+              Explore full dashboard
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>

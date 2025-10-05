@@ -92,7 +92,7 @@ export class AlertService {
 
     const alert: Alert = {
       type: "whatsapp",
-      title: "Bienvenido a AireTEMPO",
+      title: "Bienvenido a Oxira",
       message: `Gracias por registrarte. La calidad del aire actual es ${quality} (AQI: ${aqi})`,
       timestamp: new Date(),
       aqi,

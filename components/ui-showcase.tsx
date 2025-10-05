@@ -7,20 +7,20 @@ import { Smartphone, Monitor, Bell } from "lucide-react"
 const showcaseItems = [
   {
     icon: Monitor,
-    title: "Dashboard Interactivo",
-    description: "Visualiza mapas de calidad del aire, gráficos históricos y pronósticos en tiempo real",
+    title: "Interactive Dashboard",
+    description: "View air quality maps, historical charts, and real-time forecasts",
     image: "/interactive-air-quality-dashboard-with-maps--chart.jpg",
   },
   {
     icon: Bell,
-    title: "Sistema de Alertas",
-    description: "Configura notificaciones personalizadas por SMS o WhatsApp según tus preferencias",
+    title: "Alert System",
+    description: "Set up custom notifications via SMS or WhatsApp based on your preferences",
     image: "/mobile-notification-settings-screen-showing-alert-.jpg",
   },
   {
     icon: Smartphone,
-    title: "App Móvil PWA",
-    description: "Accede desde cualquier dispositivo con nuestra aplicación web progresiva",
+    title: "Mobile PWA",
+    description: "Access from any device with our progressive web app",
     image: "/mobile-phone-showing-air-quality-app-with-clean-in.jpg",
   },
 ]
@@ -37,10 +37,8 @@ export function UIShowcase() {
             titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Interfaz Diseñada para la Acción</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Una experiencia de usuario intuitiva que te mantiene informado y protegido
-          </p>
+          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Action-oriented Interface</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">An intuitive user experience that keeps you informed and protected</p>
         </div>
 
         <div className="space-y-24 max-w-6xl mx-auto">

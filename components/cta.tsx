@@ -20,16 +20,12 @@ export function CTA() {
           }`}
         >
           <div className="relative z-10 max-w-3xl mx-auto space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground text-balance">
-              Comienza a Respirar Mejor Hoy
-            </h2>
-            <p className="text-xl text-primary-foreground/90 text-pretty">
-              Únete a miles de usuarios que ya están tomando decisiones más inteligentes sobre su salud respiratoria
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground text-balance">Start Breathing Better Today</h2>
+            <p className="text-xl text-primary-foreground/90 text-pretty">Join thousands of users already making smarter decisions about their respiratory health</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button size="lg" variant="secondary" className="text-base" asChild>
                 <Link href="/register">
-                  Crear Cuenta 
+                  Create account
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
@@ -39,7 +35,7 @@ export function CTA() {
                 className="text-base bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
                 asChild
               >
-                <Link href="#demo">Ver Demostración</Link>
+                <Link href="#demo">View Demo</Link>
               </Button>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function AirQualityChart() {
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
           <BarChart3 className="w-5 h-5 text-primary" />
-          <h2 className="text-xl font-semibold">Tendencia de Calidad del Aire</h2>
+          <h2 className="text-xl font-semibold">Air Quality Trend</h2>
         </div>
         <div className="flex items-center gap-2">
           <Button variant="outline" size="sm">
@@ -53,10 +53,8 @@ export function AirQualityChart() {
           <div className="flex items-center gap-2">
             <TrendingDown className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
             <div>
-              <p className="font-semibold text-emerald-900 dark:text-emerald-100">Tendencia positiva</p>
-              <p className="text-sm text-emerald-700 dark:text-emerald-300">
-                La calidad del aire ha mejorado un 12% hoy
-              </p>
+              <p className="font-semibold text-emerald-900 dark:text-emerald-100">Improving trend</p>
+              <p className="text-sm text-emerald-700 dark:text-emerald-300">Air quality has improved by 12% today</p>
             </div>
           </div>
         </div>

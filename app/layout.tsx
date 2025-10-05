@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "AireTEMPO - Pronóstico Inteligente de Calidad del Aire",
+  title: "Oxira - Pronóstico Inteligente de Calidad del Aire",
   description:
     "Monitorea la calidad del aire en tiempo real con datos TEMPO satelitales. Recibe alertas instantáneas y toma mejores decisiones para tu salud.",
   generator: "v0.app",

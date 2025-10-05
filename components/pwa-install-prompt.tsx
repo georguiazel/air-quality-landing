@@ -49,7 +49,7 @@ export function PWAInstallPrompt() {
             <Download className="w-5 h-5 text-primary" />
           </div>
           <div className="flex-1 space-y-2">
-            <h3 className="font-semibold">Instalar AireTEMPO</h3>
+            <h3 className="font-semibold">Instalar Oxira</h3>
             <p className="text-sm text-muted-foreground">
               Instala la app para recibir notificaciones en tiempo real sobre la calidad del aire
             </p>

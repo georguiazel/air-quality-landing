@@ -17,7 +17,7 @@ export function DashboardHeader() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <span className="text-white font-bold text-lg">AT</span>
             </div>
-            <span className="font-bold text-xl">AireTEMPO</span>
+            <span className="font-bold text-xl">Oxira</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-2">
@@ -30,7 +30,7 @@ export function DashboardHeader() {
             <Link href="/alerts">
               <Button variant={pathname === "/alerts" ? "default" : "ghost"} size="sm" className="gap-2">
                 <Bell className="w-4 h-4" />
-                Alertas
+                Alerts
               </Button>
             </Link>
           </nav>

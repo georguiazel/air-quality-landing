@@ -30,8 +30,8 @@ export function AlertsConfiguration() {
     <Card className="p-6">
       <div className="space-y-6">
         <div>
-          <h2 className="text-2xl font-semibold mb-2">Canales de Notificación</h2>
-          <p className="text-sm text-muted-foreground">Selecciona cómo quieres recibir las alertas</p>
+          <h2 className="text-2xl font-semibold mb-2">Notification Channels</h2>
+          <p className="text-sm text-muted-foreground">Select how you'd like to receive alerts</p>
         </div>
 
         {/* SMS Configuration */}
@@ -43,11 +43,9 @@ export function AlertsConfiguration() {
               </div>
               <div>
                 <Label htmlFor="sms" className="text-base font-semibold">
-                  Alertas por SMS
+                  SMS Alerts
                 </Label>
-                <p className="text-sm text-muted-foreground">
-                  Recibe mensajes de texto cuando la calidad del aire cambie
-                </p>
+                <p className="text-sm text-muted-foreground">Receive text messages when air quality changes</p>
               </div>
             </div>
             <Switch
@@ -58,7 +56,7 @@ export function AlertsConfiguration() {
           </div>
           {config.smsEnabled && (
             <div className="ml-14 space-y-2">
-              <Label htmlFor="phone">Número de teléfono</Label>
+              <Label htmlFor="phone">Phone number</Label>
               <Input
                 id="phone"
                 type="tel"
@@ -79,9 +77,9 @@ export function AlertsConfiguration() {
               </div>
               <div>
                 <Label htmlFor="whatsapp" className="text-base font-semibold">
-                  Alertas por WhatsApp
+                  WhatsApp Alerts
                 </Label>
-                <p className="text-sm text-muted-foreground">Recibe notificaciones directamente en WhatsApp</p>
+                <p className="text-sm text-muted-foreground">Receive notifications directly on WhatsApp</p>
               </div>
             </div>
             <Switch
@@ -92,7 +90,7 @@ export function AlertsConfiguration() {
           </div>
           {config.whatsappEnabled && (
             <div className="ml-14 space-y-2">
-              <Label htmlFor="whatsapp-phone">Número de WhatsApp</Label>
+              <Label htmlFor="whatsapp-phone">WhatsApp number</Label>
               <Input
                 id="whatsapp-phone"
                 type="tel"
@@ -113,9 +111,9 @@ export function AlertsConfiguration() {
               </div>
               <div>
                 <Label htmlFor="email" className="text-base font-semibold">
-                  Alertas por Email
+                  Email Alerts
                 </Label>
-                <p className="text-sm text-muted-foreground">Recibe resúmenes diarios por correo electrónico</p>
+                <p className="text-sm text-muted-foreground">Receive daily summaries by email</p>
               </div>
             </div>
             <Switch
@@ -126,7 +124,7 @@ export function AlertsConfiguration() {
           </div>
           {config.emailEnabled && (
             <div className="ml-14 space-y-2">
-              <Label htmlFor="email-address">Correo electrónico</Label>
+              <Label htmlFor="email-address">Email</Label>
               <Input
                 id="email-address"
                 type="email"
@@ -140,11 +138,11 @@ export function AlertsConfiguration() {
 
         {/* Alert Settings */}
         <div className="space-y-4 p-4 rounded-lg border border-border bg-muted/30">
-          <h3 className="font-semibold">Configuración de Alertas</h3>
+          <h3 className="font-semibold">Alert Settings</h3>
 
           <div className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="interval">Intervalo de notificaciones (minutos)</Label>
+              <Label htmlFor="interval">Notification interval (minutes)</Label>
               <Input
                 id="interval"
                 type="number"
@@ -154,11 +152,11 @@ export function AlertsConfiguration() {
                 min="5"
                 max="1440"
               />
-              <p className="text-xs text-muted-foreground">Frecuencia mínima entre alertas (5-1440 minutos)</p>
+              <p className="text-xs text-muted-foreground">Minimum frequency between alerts (5-1440 minutes)</p>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="threshold">Umbral de calidad del aire (AQI)</Label>
+              <Label htmlFor="threshold">Air Quality Threshold (AQI)</Label>
               <Input
                 id="threshold"
                 type="number"
@@ -168,17 +166,13 @@ export function AlertsConfiguration() {
                 min="0"
                 max="500"
               />
-              <p className="text-xs text-muted-foreground">Recibir alerta cuando el AQI supere este valor</p>
+              <p className="text-xs text-muted-foreground">Receive an alert when the AQI exceeds this value</p>
             </div>
 
             <div className="flex items-center justify-between p-3 rounded-lg bg-background">
               <div>
-                <Label htmlFor="realtime" className="font-semibold">
-                  Notificaciones en tiempo real (PWA)
-                </Label>
-                <p className="text-sm text-muted-foreground">
-                  Recibe alertas instantáneas cuando la calidad del aire cambie
-                </p>
+                <Label htmlFor="realtime" className="font-semibold">Real-time notifications (PWA)</Label>
+                <p className="text-sm text-muted-foreground">Receive instant alerts when air quality changes</p>
               </div>
               <Switch
                 id="realtime"
@@ -191,10 +185,10 @@ export function AlertsConfiguration() {
 
         {/* Save Button */}
         <div className="flex justify-end gap-3">
-          <Button variant="outline">Cancelar</Button>
+          <Button variant="outline">Cancel</Button>
           <Button onClick={handleSave} className="gap-2">
             <Save className="w-4 h-4" />
-            Guardar configuración
+            Save settings
           </Button>
         </div>
       </div>

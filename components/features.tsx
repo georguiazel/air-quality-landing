@@ -9,41 +9,38 @@ import { useInView } from "@/hooks/use-in-view"
 const features = [
   {
     icon: Cloud,
-    title: "Datos TEMPO Satelitales",
-    description:
-      "Integración en tiempo real con datos de calidad del aire desde satélites TEMPO y estaciones terrestres.",
+    title: "TEMPO Satellite Data",
+    description: "Real-time integration with air quality data from TEMPO satellites and ground stations.",
     gradient: "from-blue-500/10 to-cyan-500/10",
   },
   {
     icon: Bell,
-    title: "Alertas Inteligentes",
-    description: "Recibe notificaciones por SMS o WhatsApp cuando la calidad del aire sea peligrosa en tu zona.",
+    title: "Smart Alerts",
+    description: "Receive SMS or WhatsApp notifications when air quality is hazardous in your area.",
     gradient: "from-amber-500/10 to-orange-500/10",
   },
   {
     icon: Smartphone,
-    title: "Web Responsive",
-    description:
-      "Aplicación web progresiva que funciona en cualquier dispositivo con notificaciones push en tiempo real.",
+    title: "Responsive Web App",
+    description: "Progressive web app that works on any device with real-time push notifications.",
     gradient: "from-purple-500/10 to-pink-500/10",
   },
   {
     icon: TrendingUp,
-    title: "Pronósticos Precisos",
-    description:
-      "Predicciones basadas en IA que combinan datos meteorológicos y patrones históricos de calidad del aire.",
+    title: "Accurate Forecasts",
+    description: "AI-driven predictions combining weather data and historical air quality patterns.",
     gradient: "from-green-500/10 to-emerald-500/10",
   },
   {
     icon: Shield,
-    title: "Salud Pública",
-    description: "Ayuda a tomar decisiones informadas sobre actividades al aire libre y protección respiratoria.",
+    title: "Public Health",
+    description: "Helps make informed decisions about outdoor activities and respiratory protection.",
     gradient: "from-red-500/10 to-rose-500/10",
   },
   {
     icon: Zap,
-    title: "Configuración Personalizada",
-    description: "Ajusta los intervalos de alertas y umbrales según tus necesidades y sensibilidad.",
+    title: "Customizable Settings",
+    description: "Adjust alert intervals and thresholds to suit your needs and sensitivity.",
     gradient: "from-yellow-500/10 to-amber-500/10",
   },
 ]
@@ -70,10 +67,8 @@ export function Features() {
             titleInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Funcionalidades Principales</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Todo lo que necesitas para monitorear y proteger tu salud respiratoria
-          </p>
+          <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Key Features</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">Everything you need to monitor and protect your respiratory health</p>
         </div>
 
         <div ref={gridRef as React.RefObject<HTMLDivElement>} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -33,41 +33,40 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium animate-pulse">
               <Cloud className="w-4 h-4 animate-bounce" />
-              <span>Datos TEMPO en Tiempo Real</span>
+              <span>Real-time TEMPO data</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance">
-              Respira con{" "}
+              Breathe with{" "}
               <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                confianza
+                confidence
               </span>
             </h1>
 
             <p className="text-xl text-muted-foreground leading-relaxed text-pretty max-w-xl">
-              Pronóstico inteligente de calidad del aire integrando datos TEMPO satelitales con mediciones terrestres.
-              Recibe alertas instantáneas y toma mejores decisiones para tu salud.
+              Smart air quality forecasts combining TEMPO satellite data with ground measurements. Receive instant alerts and make better decisions for your health.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-base group" asChild>
                 <Link href="/register">
-                  Comenzar Ahora
+                  Get Started
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="text-base bg-transparent" asChild>
-                <Link href="#demo">Ver Demo</Link>
+                <Link href="#demo">View Demo</Link>
               </Button>
             </div>
 
             <div className="flex items-center gap-8 pt-4">
               <div className="flex items-center gap-2">
                 <Bell className="w-5 h-5 text-accent animate-pulse" />
-                <span className="text-sm text-muted-foreground">Alertas SMS/WhatsApp</span>
+                <span className="text-sm text-muted-foreground">SMS/WhatsApp Alerts</span>
               </div>
               <div className="flex items-center gap-2">
                 <Cloud className="w-5 h-5 text-secondary" />
-                <span className="text-sm text-muted-foreground">Datos en Tiempo Real</span>
+                <span className="text-sm text-muted-foreground">Real-time Data</span>
               </div>
             </div>
           </div>
@@ -82,7 +81,7 @@ export function Hero() {
               <FloatingNotificationCards />
 
               {/* Center dashboard preview */}
-              
+
               {/* Animated background glow */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent via-secondary to-primary opacity-20 blur-3xl animate-pulse" />
             </div>

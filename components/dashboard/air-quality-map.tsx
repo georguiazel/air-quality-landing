@@ -10,7 +10,7 @@ export function AirQualityMap() {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <MapPin className="w-5 h-5 text-primary" />
-          <h2 className="text-xl font-semibold">Mapa de Calidad del Aire</h2>
+          <h2 className="text-xl font-semibold">Air Quality Map</h2>
         </div>
         <Button variant="ghost" size="icon">
           <Maximize2 className="w-4 h-4" />
@@ -38,19 +38,19 @@ export function AirQualityMap() {
 
               {/* Legend */}
               <div className="absolute bottom-4 left-4 bg-card/90 backdrop-blur-sm p-3 rounded-lg shadow-lg">
-                <p className="text-xs font-semibold mb-2">Índice de Calidad</p>
+                <p className="text-xs font-semibold mb-2">Quality Index</p>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-emerald-500" />
-                    <span className="text-xs">Bueno (0-50)</span>
+                    <span className="text-xs">Good (0-50)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-amber-500" />
-                    <span className="text-xs">Moderado (51-100)</span>
+                    <span className="text-xs">Moderate (51-100)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-red-500" />
-                    <span className="text-xs">Malo (101+)</span>
+                    <span className="text-xs">Unhealthy (101+)</span>
                   </div>
                 </div>
               </div>
@@ -60,8 +60,8 @@ export function AirQualityMap() {
       </div>
 
       <div className="mt-4 flex items-center justify-between text-sm text-muted-foreground">
-        <span>Última actualización: hace 5 minutos</span>
-        <span>Datos TEMPO en tiempo real</span>
+        <span>Last updated: 5 minutes ago</span>
+        <span>TEMPO real-time data</span>
       </div>
     </Card>
   )

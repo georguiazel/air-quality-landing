@@ -1,4 +1,4 @@
-const CACHE_NAME = "airetempo-v1"
+const CACHE_NAME = "Oxira-v1"
 const urlsToCache = ["/", "/dashboard", "/alerts", "/manifest.json"]
 
 // Install event - cache resources
@@ -53,7 +53,7 @@ self.addEventListener("fetch", (event) => {
 // Push notification event
 self.addEventListener("push", (event) => {
   const data = event.data ? event.data.json() : {}
-  const title = data.title || "AireTEMPO"
+  const title = data.title || "Oxira"
   const options = {
     body: data.body || "Nueva actualización de calidad del aire",
     icon: "/icon-192.jpg",

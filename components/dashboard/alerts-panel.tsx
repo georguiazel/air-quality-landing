@@ -9,23 +9,23 @@ export function AlertsPanel() {
     {
       type: "success",
       icon: <CheckCircle className="w-4 h-4" />,
-      title: "Calidad del aire buena",
-      message: "Condiciones ideales para actividades al aire libre",
-      time: "Hace 5 min",
+      title: "Good air quality",
+      message: "Ideal conditions for outdoor activities",
+      time: "5 min ago",
     },
     {
       type: "info",
       icon: <Info className="w-4 h-4" />,
-      title: "Pronóstico actualizado",
-      message: "Nuevos datos TEMPO disponibles",
-      time: "Hace 15 min",
+      title: "Forecast updated",
+      message: "New TEMPO data available",
+      time: "15 min ago",
     },
     {
       type: "warning",
       icon: <AlertTriangle className="w-4 h-4" />,
-      title: "Alerta de polen",
-      message: "Niveles moderados de polen en tu área",
-      time: "Hace 1 hora",
+      title: "Pollen alert",
+      message: "Moderate pollen levels in your area",
+      time: "1 hour ago",
     },
   ]
 
@@ -47,11 +47,9 @@ export function AlertsPanel() {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <Bell className="w-5 h-5 text-primary" />
-          <h2 className="text-xl font-semibold">Alertas</h2>
+          <h2 className="text-xl font-semibold">Alerts</h2>
         </div>
-        <Button variant="ghost" size="sm">
-          Ver todas
-        </Button>
+        <Button variant="ghost" size="sm">View all</Button>
       </div>
 
       <div className="space-y-3">
@@ -70,9 +68,7 @@ export function AlertsPanel() {
       </div>
 
       <div className="mt-4 pt-4 border-t border-border">
-        <Button variant="outline" className="w-full bg-transparent">
-          Configurar alertas
-        </Button>
+        <Button variant="outline" className="w-full bg-transparent">Configure alerts</Button>
       </div>
     </Card>
   )

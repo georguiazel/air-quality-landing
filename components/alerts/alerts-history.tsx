@@ -8,30 +8,30 @@ export function AlertsHistory() {
   const history = [
     {
       type: "whatsapp",
-      title: "Calidad del aire deteriorada",
-      message: "AQI: 78 - Moderado",
-      time: "Hace 2 horas",
+      title: "Air quality deteriorated",
+      message: "AQI: 78 - Moderate",
+      time: "2 hours ago",
       status: "sent",
     },
     {
       type: "sms",
-      title: "Alerta de primera vez",
-      message: "Bienvenido a AireTEMPO. AQI actual: 42",
-      time: "Hace 5 horas",
+      title: "First-time alert",
+      message: "Welcome to Oxira. Current AQI: 42",
+      time: "5 hours ago",
       status: "sent",
     },
     {
       type: "whatsapp",
-      title: "Mejora en calidad del aire",
-      message: "AQI: 35 - Bueno",
-      time: "Ayer",
+      title: "Air quality improved",
+      message: "AQI: 35 - Good",
+      time: "Yesterday",
       status: "sent",
     },
     {
       type: "email",
-      title: "Resumen diario",
-      message: "Tu reporte diario de calidad del aire",
-      time: "Hace 2 días",
+      title: "Daily summary",
+      message: "Your daily air quality report",
+      time: "2 days ago",
       status: "sent",
     },
   ]
@@ -53,10 +53,8 @@ export function AlertsHistory() {
     <Card className="p-6">
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold">Historial de Alertas</h2>
-          <Button variant="ghost" size="sm">
-            Ver todo
-          </Button>
+          <h2 className="text-xl font-semibold">Alerts History</h2>
+          <Button variant="ghost" size="sm">View all</Button>
         </div>
 
         <div className="space-y-3">
@@ -81,7 +79,7 @@ export function AlertsHistory() {
         </div>
 
         <div className="pt-4 border-t border-border">
-          <p className="text-xs text-muted-foreground text-center">Las alertas se envían según tu configuración</p>
+          <p className="text-xs text-muted-foreground text-center">Alerts are sent according to your settings</p>
         </div>
       </div>
     </Card>

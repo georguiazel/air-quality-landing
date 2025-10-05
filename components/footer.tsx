@@ -11,54 +11,40 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Image src="/oxyra-logo.svg" alt="Oxyra" width={120} height={32} className="h-8 w-auto" />
             </Link>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Pronóstico inteligente de calidad del aire para mejores decisiones de salud pública.
-            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">Smart air quality forecasting for better public health decisions.</p>
           </div>
 
           {/* Product */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Producto</h3>
+            <h3 className="font-semibold text-foreground">Product</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="#features"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Funcionalidades
-                </Link>
+                <Link href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</Link>
               </li>
               <li>
-                <Link href="#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Demo
-                </Link>
+                <Link href="#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Demo</Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Precios
-                </Link>
+                <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
               </li>
             </ul>
           </div>
 
           {/* Company */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Empresa</h3>
+            <h3 className="font-semibold text-foreground">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Acerca de
-                </Link>
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
-                </Link>
+                <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Contacto
-                </Link>
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+              </li>
+              <li>
+                <Link href="/careers" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Careers</Link>
               </li>
             </ul>
           </div>
@@ -68,23 +54,17 @@ export function Footer() {
             <h3 className="font-semibold text-foreground">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Privacidad
-                </Link>
+                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</Link>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Términos
-                </Link>
+                <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</Link>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border">
-          <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Oxyra. Todos los derechos reservados.
-          </p>
+          <p className="text-center text-sm text-muted-foreground">© {new Date().getFullYear()} Oxyra. All rights reserved.</p>
         </div>
       </div>
     </footer>

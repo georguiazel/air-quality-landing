@@ -24,7 +24,7 @@ export function CTA() {
             <p className="text-xl text-primary-foreground/90 text-pretty">Join thousands of users already making smarter decisions about their respiratory health</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button size="lg" variant="secondary" className="text-base" asChild>
-                <Link href="/register">
+                <Link href="https://nasa-space-hackaton-2025.vercel.app/signup">
                   Create account
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>

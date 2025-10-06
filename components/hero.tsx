@@ -48,14 +48,8 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-base group" asChild>
-                <Link href="/register">
-                  Get Started
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
               <Button size="lg" variant="outline" className="text-base bg-transparent" asChild>
-                <Link href="#demo">View Demo</Link>
+                <Link href="https://nasa-space-hackaton-2025.vercel.app/">View Demo</Link>
               </Button>
             </div>
 
